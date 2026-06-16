@@ -142,12 +142,6 @@
             border: 1.5px solid rgba(255,255,255,0.3);
             border-radius: 50%;
         }
-        .wax-seal-text {
-            font-family: 'Great Vibes', cursive;
-            font-size: 1.3rem;
-            color: var(--dark-maroon);
-            line-height: 1;
-        }
         .envelope-container:hover .wax-seal {
             transform: translateX(-50%) scale(1.1);
             box-shadow: 0 5px 20px rgba(201, 169, 110, 0.4);
@@ -496,9 +490,7 @@
                 </div>
             </div>
             <div class="envelope-flap-top"></div>
-            <div class="wax-seal">
-                <span class="wax-seal-text">S</span>
-            </div>
+            <div class="wax-seal"></div>
             <div class="envelope-flap-left"></div>
             <div class="envelope-flap-right"></div>
             <div class="envelope-flap-bottom"></div>
@@ -556,119 +548,80 @@
                 <div class="youre-invited">You're invited</div>
                 <div class="celebrate-text">Join us as we celebrate our engagement</div>
 
-                <!-- FULL RING BOX ILLUSTRATION with flower, sparkles, and extra clutter -->
                 <div class="ring-box-svg">
                     <svg viewBox="0 0 260 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- ===== LEFT SPARKLES ===== -->
                         <g opacity="0.6">
-                            <!-- Big star left -->
                             <path d="M28 48 L28 58" stroke="#721A1A" stroke-width="1.2" stroke-linecap="round"/>
                             <path d="M23 53 L33 53" stroke="#721A1A" stroke-width="1.2" stroke-linecap="round"/>
                             <circle cx="28" cy="53" r="2.5" stroke="#721A1A" stroke-width="0.8" fill="none"/>
-                            <!-- Small cross left -->
                             <path d="M18 68 L18 73" stroke="#721A1A" stroke-width="0.9" stroke-linecap="round"/>
                             <path d="M15 70 L21 70" stroke="#721A1A" stroke-width="0.9" stroke-linecap="round"/>
-                            <!-- Dots left -->
                             <circle cx="15" cy="78" r="1.5" stroke="#721A1A" stroke-width="0.6" fill="none"/>
                             <circle cx="35" cy="72" r="1" stroke="#721A1A" stroke-width="0.5" fill="none"/>
                             <circle cx="22" cy="82" r="1.2" stroke="#721A1A" stroke-width="0.5" fill="none"/>
-                            <!-- Tiny star left lower -->
                             <path d="M12 88 L12 92" stroke="#721A1A" stroke-width="0.7" stroke-linecap="round"/>
                             <path d="M10 90 L14 90" stroke="#721A1A" stroke-width="0.7" stroke-linecap="round"/>
                         </g>
-
-                        <!-- ===== RIGHT SPARKLES ===== -->
                         <g opacity="0.6">
-                            <!-- Big star right -->
                             <path d="M232 48 L232 58" stroke="#721A1A" stroke-width="1.2" stroke-linecap="round"/>
                             <path d="M227 53 L237 53" stroke="#721A1A" stroke-width="1.2" stroke-linecap="round"/>
                             <circle cx="232" cy="53" r="2.5" stroke="#721A1A" stroke-width="0.8" fill="none"/>
-                            <!-- Small cross right -->
                             <path d="M242 68 L242 73" stroke="#721A1A" stroke-width="0.9" stroke-linecap="round"/>
                             <path d="M239 70 L245 70" stroke="#721A1A" stroke-width="0.9" stroke-linecap="round"/>
-                            <!-- Dots right -->
                             <circle cx="245" cy="78" r="1.5" stroke="#721A1A" stroke-width="0.6" fill="none"/>
                             <circle cx="225" cy="72" r="1" stroke="#721A1A" stroke-width="0.5" fill="none"/>
                             <circle cx="238" cy="82" r="1.2" stroke="#721A1A" stroke-width="0.5" fill="none"/>
-                            <!-- Tiny star right lower -->
                             <path d="M248 88 L248 92" stroke="#721A1A" stroke-width="0.7" stroke-linecap="round"/>
                             <path d="M246 90 L250 90" stroke="#721A1A" stroke-width="0.7" stroke-linecap="round"/>
                         </g>
-
-                        <!-- ===== BOX LID (open, angled back) ===== -->
                         <path d="M60 80 L50 30 L210 30 L200 80" stroke="#721A1A" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
                         <line x1="50" y1="30" x2="210" y2="30" stroke="#721A1A" stroke-width="1.8" stroke-linecap="round"/>
-                        <!-- Lid inner detail lines -->
                         <line x1="60" y1="70" x2="200" y2="70" stroke="#721A1A" stroke-width="0.7" opacity="0.4"/>
                         <line x1="55" y1="50" x2="205" y2="50" stroke="#721A1A" stroke-width="0.5" opacity="0.3"/>
-
-                        <!-- ===== BOX BASE ===== -->
                         <rect x="60" y="80" width="140" height="60" rx="4" stroke="#721A1A" stroke-width="1.8" fill="none"/>
-                        <!-- Inner rim -->
                         <rect x="65" y="85" width="130" height="50" rx="2" stroke="#721A1A" stroke-width="0.9" fill="none" opacity="0.5"/>
-                        <!-- Bottom line detail -->
                         <line x1="60" y1="125" x2="200" y2="125" stroke="#721A1A" stroke-width="0.6" opacity="0.3"/>
-                        <!-- Side line details -->
                         <line x1="65" y1="80" x2="65" y2="140" stroke="#721A1A" stroke-width="0.5" opacity="0.3"/>
                         <line x1="195" y1="80" x2="195" y2="140" stroke="#721A1A" stroke-width="0.5" opacity="0.3"/>
-
-                        <!-- ===== RING 1 (left) ===== -->
                         <ellipse cx="115" cy="102" rx="16" ry="10" stroke="#721A1A" stroke-width="1.4" fill="none"/>
                         <ellipse cx="115" cy="102" rx="11" ry="6" stroke="#721A1A" stroke-width="0.7" fill="none" opacity="0.5"/>
-                        <!-- Ring band bottom -->
                         <path d="M102 105 Q115 115 128 105" stroke="#721A1A" stroke-width="1.1" fill="none"/>
-
-                        <!-- ===== RING 2 (right, overlapping) ===== -->
                         <ellipse cx="135" cy="100" rx="16" ry="10" stroke="#721A1A" stroke-width="1.4" fill="none"/>
                         <ellipse cx="135" cy="100" rx="11" ry="6" stroke="#721A1A" stroke-width="0.7" fill="none" opacity="0.5"/>
-                        <!-- Ring band bottom -->
                         <path d="M122 103 Q135 113 148 103" stroke="#721A1A" stroke-width="1.1" fill="none"/>
-
-                        <!-- ===== DIAMOND on Ring 1 ===== -->
                         <path d="M110 88 L105 80 L120 80 Z" stroke="#721A1A" stroke-width="1" fill="none" stroke-linejoin="round"/>
                         <line x1="105" y1="80" x2="120" y2="80" stroke="#721A1A" stroke-width="1"/>
                         <line x1="107" y1="84" x2="118" y2="84" stroke="#721A1A" stroke-width="0.6" opacity="0.5"/>
-                        <!-- Diamond sparkle -->
                         <path d="M112 75 L112 78" stroke="#721A1A" stroke-width="0.6" stroke-linecap="round"/>
                         <path d="M110 76 L114 76" stroke="#721A1A" stroke-width="0.6" stroke-linecap="round"/>
-
-                        <!-- ===== PEONY FLOWER (bottom left of box) ===== -->
                         <g transform="translate(50, 130)">
-                            <!-- Outer petals -->
                             <ellipse cx="0" cy="5" rx="16" ry="12" stroke="#721A1A" stroke-width="1" fill="none" transform="rotate(-20)"/>
                             <ellipse cx="10" cy="10" rx="14" ry="10" stroke="#721A1A" stroke-width="0.9" fill="none" transform="rotate(15)"/>
                             <ellipse cx="-6" cy="12" rx="13" ry="9" stroke="#721A1A" stroke-width="0.9" fill="none" transform="rotate(-45)"/>
                             <ellipse cx="6" cy="0" rx="15" ry="10" stroke="#721A1A" stroke-width="1" fill="none" transform="rotate(35)"/>
                             <ellipse cx="-10" cy="2" rx="12" ry="8" stroke="#721A1A" stroke-width="0.8" fill="none" transform="rotate(-65)"/>
                             <ellipse cx="12" cy="4" rx="11" ry="8" stroke="#721A1A" stroke-width="0.8" fill="none" transform="rotate(55)"/>
-                            <!-- Middle petals -->
                             <ellipse cx="2" cy="6" rx="9" ry="7" stroke="#721A1A" stroke-width="0.9" fill="none" transform="rotate(5)"/>
                             <ellipse cx="-3" cy="8" rx="8" ry="6" stroke="#721A1A" stroke-width="0.8" fill="none" transform="rotate(-30)"/>
                             <ellipse cx="5" cy="4" rx="8" ry="6" stroke="#721A1A" stroke-width="0.8" fill="none" transform="rotate(40)"/>
                             <ellipse cx="0" cy="2" rx="7" ry="5" stroke="#721A1A" stroke-width="0.7" fill="none" transform="rotate(-15)"/>
-                            <!-- Center -->
                             <circle cx="0" cy="6" r="5" stroke="#721A1A" stroke-width="0.9" fill="none"/>
                             <circle cx="0" cy="6" r="2.5" stroke="#721A1A" stroke-width="0.7" fill="none"/>
-                            <!-- Center dots (stamen) -->
                             <circle cx="-1.5" cy="4.5" r="0.9" fill="#721A1A" opacity="0.5"/>
                             <circle cx="1.5" cy="4.5" r="0.9" fill="#721A1A" opacity="0.5"/>
                             <circle cx="0" cy="7.5" r="0.9" fill="#721A1A" opacity="0.5"/>
                             <circle cx="-1" cy="6.5" r="0.7" fill="#721A1A" opacity="0.4"/>
                             <circle cx="1" cy="6.5" r="0.7" fill="#721A1A" opacity="0.4"/>
                             <circle cx="0" cy="5.5" r="0.7" fill="#721A1A" opacity="0.4"/>
-                            <!-- Leaves -->
                             <path d="M-14 16 Q-24 24 -18 32" stroke="#721A1A" stroke-width="0.9" fill="none"/>
                             <path d="M-18 32 Q-12 36 -6 28" stroke="#721A1A" stroke-width="0.8" fill="none"/>
                             <path d="M14 16 Q24 24 18 32" stroke="#721A1A" stroke-width="0.9" fill="none"/>
                             <path d="M18 32 Q12 36 6 28" stroke="#721A1A" stroke-width="0.8" fill="none"/>
                             <path d="M0 20 Q-6 28 0 36" stroke="#721A1A" stroke-width="0.8" fill="none"/>
                             <path d="M0 36 Q6 32 3 26" stroke="#721A1A" stroke-width="0.7" fill="none"/>
-                            <!-- Extra leaf detail -->
                             <path d="M-8 22 Q-14 26 -10 30" stroke="#721A1A" stroke-width="0.6" fill="none"/>
                             <path d="M8 22 Q14 26 10 30" stroke="#721A1A" stroke-width="0.6" fill="none"/>
                         </g>
-
-                        <!-- ===== EXTRA DECORATIVE DOTS around box ===== -->
                         <circle cx="45" cy="95" r="1.8" stroke="#721A1A" stroke-width="0.5" fill="none" opacity="0.4"/>
                         <circle cx="215" cy="90" r="1.8" stroke="#721A1A" stroke-width="0.5" fill="none" opacity="0.4"/>
                         <circle cx="50" cy="135" r="1.2" stroke="#721A1A" stroke-width="0.4" fill="none" opacity="0.3"/>
@@ -677,11 +630,8 @@
                         <circle cx="220" cy="110" r="1" stroke="#721A1A" stroke-width="0.4" fill="none" opacity="0.25"/>
                         <circle cx="55" cy="60" r="1.2" stroke="#721A1A" stroke-width="0.4" fill="none" opacity="0.3"/>
                         <circle cx="205" cy="55" r="1.2" stroke="#721A1A" stroke-width="0.4" fill="none" opacity="0.3"/>
-
-                        <!-- Small decorative line left -->
                         <path d="M42 105 L45 105" stroke="#721A1A" stroke-width="0.6" stroke-linecap="round" opacity="0.4"/>
                         <path d="M43 103 L43 107" stroke="#721A1A" stroke-width="0.6" stroke-linecap="round" opacity="0.4"/>
-                        <!-- Small decorative line right -->
                         <path d="M215 105 L218 105" stroke="#721A1A" stroke-width="0.6" stroke-linecap="round" opacity="0.4"/>
                         <path d="M216 103 L216 107" stroke="#721A1A" stroke-width="0.6" stroke-linecap="round" opacity="0.4"/>
                     </svg>
